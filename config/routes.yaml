@@ -13,3 +13,9 @@ kontactPost:
     path: /kontakt
     methods: [POST]
     controller: App\Controller\ContactFormController::post
+
+orderDetails:
+    path: /zamowienie/{id}
+    controller: App\Controller\PetStoreController::getOrder
+    requirements:
+        id: '\d+'
